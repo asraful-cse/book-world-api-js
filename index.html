@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 6 | Book Searching API</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <main>
+        <div class="main_div">
+            <h2 class="header-text">Welcome to your open books library World</h2>
+            <div class="search_div">
+                <textarea id="search-field" class="text_field"></textarea>
+                <button id="sbtn"> Search </button>
+            </div>
+            <br>
+            <br>
+            <div id="not_found" class="not_found">
+                <h1>Searched Item Not Found...!!!</h1>
+            </div>
+            <div id="total_found" class="total_found">
+                <h1>Search Result : <span id="search_res"></span></h1>
+            </div>
+            <br>
+            <br>
+            <div class="output">
+                <div id='loader'><img src="img/loading3.gif" alt=""></div>
+                <div id="output_div" class="card_holder">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="api.js"></script>
+
+</body>
+
+</html>
